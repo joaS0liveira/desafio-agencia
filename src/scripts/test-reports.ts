@@ -24,8 +24,12 @@ import {
   sumOrderAmounts,
   totals,
 } from "../lib/stats.ts";
-import { clients, orders } from "../services/data.ts";
-import { ORDER_STATUS } from "../types/index.ts";
+import clientsData  from "../../public/data/clientes.json";
+import ordersData from "../../public/data/encomendas.json";
+import { Client, Order, ORDER_STATUS } from "../types/index.ts";
+
+const clients = clientsData as Client[];
+const orders = ordersData as Order[];
 
 const report = totals(orders);
 const summary = collectionSummary(orders);

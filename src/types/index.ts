@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 export const ORDER_STATUS = {
   paid: "Paga",
   pending: "Pendente",
@@ -8,7 +6,6 @@ export const ORDER_STATUS = {
 
 export type OrderStatus = (typeof ORDER_STATUS)[keyof typeof ORDER_STATUS];
 
->>>>>>> Stashed changes
 export interface Client {
   id: number;
   company: string;
@@ -26,11 +23,5 @@ export interface Order {
   date: string;
   service: string;
   amount: number;
-<<<<<<< Updated upstream
-  status: string;
-=======
   status: OrderStatus;
->>>>>>> Stashed changes
 }
-
-export type OrderStatus = "pago" | "pendente" | "Em atraso";

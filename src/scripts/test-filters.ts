@@ -14,7 +14,14 @@ import {
   hasActiveFilters,
   uniqueValues,
 } from "../lib/filters.ts";
-import { clients, orders } from "../services/data.ts";
+
+import clientsData  from "../../public/data/clientes.json";
+import ordersData from "../../public/data/encomendas.json";
+
+import { Client, Order } from "../types/index.ts";
+
+const clients = clientsData as Client[];
+const orders = ordersData as Order[];
 
 const order = orders[0];
 const client = clients.find((client) => client.id === order.client_id);

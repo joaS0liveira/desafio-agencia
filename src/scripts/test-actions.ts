@@ -12,8 +12,13 @@ import {
   formatThousands,
   initials,
 } from "../lib/format.ts";
-import { clients, orders } from "../services/data.ts";
-import { ORDER_STATUS } from "../types/index.ts";
+import clientsData  from "../../public/data/clientes.json";
+import ordersData from "../../public/data/encomendas.json";
+
+import { Client, Order, ORDER_STATUS } from "../types/index.ts";
+
+const clients = clientsData as Client[];
+const orders = ordersData as Order[];
 
 const order = orders.find((order) => order.status === ORDER_STATUS.overdue);
 assert.ok(order);
