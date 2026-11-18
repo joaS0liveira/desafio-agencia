@@ -17,3 +17,5 @@ export interface Order {
   amount: number;
   status: string;
 }
+
+export type OrderStatus = "pago" | "pendente" | "Em atraso";

@@ -1,4 +1,4 @@
-import type { Product, Sale } from "@/types";
+import type { Client, Order } from "@/types";
 
 async function fetchJson<T>(file: string): Promise<T> {
   const response = await fetch(`/data/${file}.json`);
@@ -8,5 +8,5 @@ async function fetchJson<T>(file: string): Promise<T> {
   return response.json();
 }
 
-export const fetchSales = () => fetchJson<Sale[]>("vendas");
-export const fetchProducts = () => fetchJson<Product[]>("produtos");
+export const fetchSales = () => fetchJson<Order[]>("encomendas");
+export const fetchProducts = () => fetchJson<Client[]>("clientes");
