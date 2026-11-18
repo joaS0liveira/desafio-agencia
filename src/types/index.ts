@@ -1,3 +1,5 @@
+export type OrderStatus = "Paga" | "Pendente" | "Em atraso";
+
 export interface Client {
   id: number;
   company: string;
@@ -7,6 +9,7 @@ export interface Client {
   email: string;
   phone: string;
   customer_since: string;
+  
 }
 
 export interface Order {
@@ -15,7 +18,6 @@ export interface Order {
   date: string;
   service: string;
   amount: number;
-  status: string;
-}
+  status: OrderStatus;
 
-export type OrderStatus = "pago" | "pendente" | "Em atraso";
+}
