@@ -1,0 +1,994 @@
+[
+  {
+    "id": 1,
+    "client_id": 3,
+    "date": "2025-11-03",
+    "service": "Formação",
+    "amount": 3100,
+    "status": "Paga"
+  },
+  {
+    "id": 2,
+    "client_id": 13,
+    "date": "2025-11-05",
+    "service": "Formação",
+    "amount": 1050,
+    "status": "Paga"
+  },
+  {
+    "id": 3,
+    "client_id": 6,
+    "date": "2025-11-06",
+    "service": "Desenvolvimento web",
+    "amount": 12550,
+    "status": "Paga"
+  },
+  {
+    "id": 4,
+    "client_id": 12,
+    "date": "2025-11-11",
+    "service": "Design de marca",
+    "amount": 2350,
+    "status": "Paga"
+  },
+  {
+    "id": 5,
+    "client_id": 13,
+    "date": "2025-11-13",
+    "service": "Consultoria",
+    "amount": 2500,
+    "status": "Paga"
+  },
+  {
+    "id": 6,
+    "client_id": 6,
+    "date": "2025-11-19",
+    "service": "Consultoria",
+    "amount": 1950,
+    "status": "Paga"
+  },
+  {
+    "id": 7,
+    "client_id": 5,
+    "date": "2025-11-20",
+    "service": "Aplicação mobile",
+    "amount": 14950,
+    "status": "Paga"
+  },
+  {
+    "id": 8,
+    "client_id": 8,
+    "date": "2025-11-24",
+    "service": "Desenvolvimento web",
+    "amount": 11450,
+    "status": "Paga"
+  },
+  {
+    "id": 9,
+    "client_id": 11,
+    "date": "2025-12-01",
+    "service": "Manutenção mensal",
+    "amount": 2450,
+    "status": "Paga"
+  },
+  {
+    "id": 10,
+    "client_id": 5,
+    "date": "2025-12-05",
+    "service": "Manutenção mensal",
+    "amount": 1500,
+    "status": "Paga"
+  },
+  {
+    "id": 11,
+    "client_id": 6,
+    "date": "2025-12-09",
+    "service": "Manutenção mensal",
+    "amount": 2150,
+    "status": "Paga"
+  },
+  {
+    "id": 12,
+    "client_id": 11,
+    "date": "2025-12-11",
+    "service": "Formação",
+    "amount": 1600,
+    "status": "Paga"
+  },
+  {
+    "id": 13,
+    "client_id": 13,
+    "date": "2025-12-12",
+    "service": "Consultoria",
+    "amount": 2200,
+    "status": "Paga"
+  },
+  {
+    "id": 14,
+    "client_id": 11,
+    "date": "2025-12-16",
+    "service": "Desenvolvimento web",
+    "amount": 19100,
+    "status": "Paga"
+  },
+  {
+    "id": 15,
+    "client_id": 10,
+    "date": "2025-12-17",
+    "service": "Formação",
+    "amount": 4400,
+    "status": "Paga"
+  },
+  {
+    "id": 16,
+    "client_id": 10,
+    "date": "2025-12-24",
+    "service": "Aplicação mobile",
+    "amount": 56950,
+    "status": "Paga"
+  },
+  {
+    "id": 17,
+    "client_id": 2,
+    "date": "2025-12-25",
+    "service": "Consultoria",
+    "amount": 7500,
+    "status": "Paga"
+  },
+  {
+    "id": 18,
+    "client_id": 2,
+    "date": "2025-12-26",
+    "service": "Consultoria",
+    "amount": 6450,
+    "status": "Paga"
+  },
+  {
+    "id": 19,
+    "client_id": 8,
+    "date": "2025-12-31",
+    "service": "Consultoria",
+    "amount": 3350,
+    "status": "Paga"
+  },
+  {
+    "id": 20,
+    "client_id": 2,
+    "date": "2026-01-01",
+    "service": "Aplicação mobile",
+    "amount": 16550,
+    "status": "Paga"
+  },
+  {
+    "id": 21,
+    "client_id": 2,
+    "date": "2026-01-02",
+    "service": "Design de marca",
+    "amount": 4400,
+    "status": "Paga"
+  },
+  {
+    "id": 22,
+    "client_id": 2,
+    "date": "2026-01-06",
+    "service": "Consultoria",
+    "amount": 4700,
+    "status": "Paga"
+  },
+  {
+    "id": 23,
+    "client_id": 11,
+    "date": "2026-01-13",
+    "service": "Formação",
+    "amount": 3000,
+    "status": "Paga"
+  },
+  {
+    "id": 24,
+    "client_id": 6,
+    "date": "2026-01-15",
+    "service": "Consultoria",
+    "amount": 2950,
+    "status": "Paga"
+  },
+  {
+    "id": 25,
+    "client_id": 7,
+    "date": "2026-01-16",
+    "service": "Manutenção mensal",
+    "amount": 1150,
+    "status": "Paga"
+  },
+  {
+    "id": 26,
+    "client_id": 5,
+    "date": "2026-01-23",
+    "service": "Consultoria",
+    "amount": 5600,
+    "status": "Paga"
+  },
+  {
+    "id": 27,
+    "client_id": 12,
+    "date": "2026-01-29",
+    "service": "Manutenção mensal",
+    "amount": 800,
+    "status": "Paga"
+  },
+  {
+    "id": 28,
+    "client_id": 7,
+    "date": "2026-02-02",
+    "service": "Desenvolvimento web",
+    "amount": 13900,
+    "status": "Paga"
+  },
+  {
+    "id": 29,
+    "client_id": 10,
+    "date": "2026-02-03",
+    "service": "Desenvolvimento web",
+    "amount": 34250,
+    "status": "Paga"
+  },
+  {
+    "id": 30,
+    "client_id": 2,
+    "date": "2026-02-05",
+    "service": "Consultoria",
+    "amount": 4050,
+    "status": "Paga"
+  },
+  {
+    "id": 31,
+    "client_id": 9,
+    "date": "2026-02-06",
+    "service": "Design de marca",
+    "amount": 3000,
+    "status": "Paga"
+  },
+  {
+    "id": 32,
+    "client_id": 4,
+    "date": "2026-02-11",
+    "service": "Manutenção mensal",
+    "amount": 300,
+    "status": "Paga"
+  },
+  {
+    "id": 33,
+    "client_id": 7,
+    "date": "2026-02-12",
+    "service": "Consultoria",
+    "amount": 1650,
+    "status": "Paga"
+  },
+  {
+    "id": 34,
+    "client_id": 2,
+    "date": "2026-02-13",
+    "service": "Aplicação mobile",
+    "amount": 15700,
+    "status": "Paga"
+  },
+  {
+    "id": 35,
+    "client_id": 6,
+    "date": "2026-02-17",
+    "service": "Desenvolvimento web",
+    "amount": 21950,
+    "status": "Paga"
+  },
+  {
+    "id": 36,
+    "client_id": 10,
+    "date": "2026-02-18",
+    "service": "Formação",
+    "amount": 3200,
+    "status": "Paga"
+  },
+  {
+    "id": 37,
+    "client_id": 6,
+    "date": "2026-02-19",
+    "service": "Formação",
+    "amount": 4900,
+    "status": "Paga"
+  },
+  {
+    "id": 38,
+    "client_id": 9,
+    "date": "2026-02-20",
+    "service": "Manutenção mensal",
+    "amount": 550,
+    "status": "Paga"
+  },
+  {
+    "id": 39,
+    "client_id": 10,
+    "date": "2026-02-26",
+    "service": "Manutenção mensal",
+    "amount": 2950,
+    "status": "Paga"
+  },
+  {
+    "id": 40,
+    "client_id": 6,
+    "date": "2026-03-09",
+    "service": "Design de marca",
+    "amount": 4150,
+    "status": "Paga"
+  },
+  {
+    "id": 41,
+    "client_id": 7,
+    "date": "2026-03-10",
+    "service": "Desenvolvimento web",
+    "amount": 12250,
+    "status": "Paga"
+  },
+  {
+    "id": 42,
+    "client_id": 5,
+    "date": "2026-03-11",
+    "service": "Manutenção mensal",
+    "amount": 1350,
+    "status": "Paga"
+  },
+  {
+    "id": 43,
+    "client_id": 10,
+    "date": "2026-03-13",
+    "service": "Aplicação mobile",
+    "amount": 53850,
+    "status": "Paga"
+  },
+  {
+    "id": 44,
+    "client_id": 3,
+    "date": "2026-03-16",
+    "service": "Consultoria",
+    "amount": 5500,
+    "status": "Paga"
+  },
+  {
+    "id": 45,
+    "client_id": 9,
+    "date": "2026-03-20",
+    "service": "Consultoria",
+    "amount": 1750,
+    "status": "Paga"
+  },
+  {
+    "id": 46,
+    "client_id": 8,
+    "date": "2026-03-24",
+    "service": "Desenvolvimento web",
+    "amount": 31750,
+    "status": "Paga"
+  },
+  {
+    "id": 47,
+    "client_id": 9,
+    "date": "2026-03-26",
+    "service": "Design de marca",
+    "amount": 3750,
+    "status": "Paga"
+  },
+  {
+    "id": 48,
+    "client_id": 1,
+    "date": "2026-03-30",
+    "service": "Aplicação mobile",
+    "amount": 6450,
+    "status": "Paga"
+  },
+  {
+    "id": 49,
+    "client_id": 13,
+    "date": "2026-03-31",
+    "service": "Consultoria",
+    "amount": 1800,
+    "status": "Paga"
+  },
+  {
+    "id": 50,
+    "client_id": 7,
+    "date": "2026-04-01",
+    "service": "Aplicação mobile",
+    "amount": 14950,
+    "status": "Paga"
+  },
+  {
+    "id": 51,
+    "client_id": 11,
+    "date": "2026-04-03",
+    "service": "Desenvolvimento web",
+    "amount": 20600,
+    "status": "Paga"
+  },
+  {
+    "id": 52,
+    "client_id": 13,
+    "date": "2026-04-06",
+    "service": "Manutenção mensal",
+    "amount": 550,
+    "status": "Paga"
+  },
+  {
+    "id": 53,
+    "client_id": 10,
+    "date": "2026-04-07",
+    "service": "Consultoria",
+    "amount": 7300,
+    "status": "Paga"
+  },
+  {
+    "id": 54,
+    "client_id": 10,
+    "date": "2026-04-08",
+    "service": "Aplicação mobile",
+    "amount": 48500,
+    "status": "Paga"
+  },
+  {
+    "id": 55,
+    "client_id": 5,
+    "date": "2026-04-09",
+    "service": "Formação",
+    "amount": 1250,
+    "status": "Paga"
+  },
+  {
+    "id": 56,
+    "client_id": 4,
+    "date": "2026-04-14",
+    "service": "Consultoria",
+    "amount": 2050,
+    "status": "Paga"
+  },
+  {
+    "id": 57,
+    "client_id": 11,
+    "date": "2026-04-16",
+    "service": "Desenvolvimento web",
+    "amount": 22850,
+    "status": "Paga"
+  },
+  {
+    "id": 58,
+    "client_id": 10,
+    "date": "2026-04-17",
+    "service": "Manutenção mensal",
+    "amount": 2200,
+    "status": "Paga"
+  },
+  {
+    "id": 59,
+    "client_id": 8,
+    "date": "2026-04-23",
+    "service": "Aplicação mobile",
+    "amount": 36700,
+    "status": "Paga"
+  },
+  {
+    "id": 60,
+    "client_id": 11,
+    "date": "2026-04-24",
+    "service": "Aplicação mobile",
+    "amount": 20250,
+    "status": "Paga"
+  },
+  {
+    "id": 61,
+    "client_id": 7,
+    "date": "2026-04-28",
+    "service": "Manutenção mensal",
+    "amount": 950,
+    "status": "Em atraso"
+  },
+  {
+    "id": 62,
+    "client_id": 11,
+    "date": "2026-05-05",
+    "service": "Consultoria",
+    "amount": 3700,
+    "status": "Paga"
+  },
+  {
+    "id": 63,
+    "client_id": 7,
+    "date": "2026-05-07",
+    "service": "Manutenção mensal",
+    "amount": 1100,
+    "status": "Paga"
+  },
+  {
+    "id": 64,
+    "client_id": 7,
+    "date": "2026-05-12",
+    "service": "Manutenção mensal",
+    "amount": 1000,
+    "status": "Paga"
+  },
+  {
+    "id": 65,
+    "client_id": 9,
+    "date": "2026-05-13",
+    "service": "Manutenção mensal",
+    "amount": 500,
+    "status": "Paga"
+  },
+  {
+    "id": 66,
+    "client_id": 8,
+    "date": "2026-05-14",
+    "service": "Formação",
+    "amount": 3600,
+    "status": "Paga"
+  },
+  {
+    "id": 67,
+    "client_id": 5,
+    "date": "2026-05-15",
+    "service": "Manutenção mensal",
+    "amount": 1000,
+    "status": "Paga"
+  },
+  {
+    "id": 68,
+    "client_id": 3,
+    "date": "2026-05-20",
+    "service": "Aplicação mobile",
+    "amount": 12150,
+    "status": "Paga"
+  },
+  {
+    "id": 69,
+    "client_id": 11,
+    "date": "2026-05-22",
+    "service": "Consultoria",
+    "amount": 7350,
+    "status": "Paga"
+  },
+  {
+    "id": 70,
+    "client_id": 5,
+    "date": "2026-05-26",
+    "service": "Formação",
+    "amount": 1950,
+    "status": "Paga"
+  },
+  {
+    "id": 71,
+    "client_id": 2,
+    "date": "2026-05-28",
+    "service": "Desenvolvimento web",
+    "amount": 42950,
+    "status": "Paga"
+  },
+  {
+    "id": 72,
+    "client_id": 2,
+    "date": "2026-05-29",
+    "service": "Design de marca",
+    "amount": 10950,
+    "status": "Paga"
+  },
+  {
+    "id": 73,
+    "client_id": 6,
+    "date": "2026-06-02",
+    "service": "Aplicação mobile",
+    "amount": 17550,
+    "status": "Paga"
+  },
+  {
+    "id": 74,
+    "client_id": 11,
+    "date": "2026-06-03",
+    "service": "Consultoria",
+    "amount": 4250,
+    "status": "Paga"
+  },
+  {
+    "id": 75,
+    "client_id": 12,
+    "date": "2026-06-10",
+    "service": "Desenvolvimento web",
+    "amount": 9650,
+    "status": "Paga"
+  },
+  {
+    "id": 76,
+    "client_id": 2,
+    "date": "2026-06-11",
+    "service": "Desenvolvimento web",
+    "amount": 18000,
+    "status": "Paga"
+  },
+  {
+    "id": 77,
+    "client_id": 14,
+    "date": "2026-06-12",
+    "service": "Aplicação mobile",
+    "amount": 30150,
+    "status": "Paga"
+  },
+  {
+    "id": 78,
+    "client_id": 10,
+    "date": "2026-06-16",
+    "service": "Aplicação mobile",
+    "amount": 33300,
+    "status": "Paga"
+  },
+  {
+    "id": 79,
+    "client_id": 2,
+    "date": "2026-06-18",
+    "service": "Design de marca",
+    "amount": 6850,
+    "status": "Paga"
+  },
+  {
+    "id": 80,
+    "client_id": 2,
+    "date": "2026-06-23",
+    "service": "Aplicação mobile",
+    "amount": 30850,
+    "status": "Paga"
+  },
+  {
+    "id": 81,
+    "client_id": 8,
+    "date": "2026-07-01",
+    "service": "Desenvolvimento web",
+    "amount": 19350,
+    "status": "Em atraso"
+  },
+  {
+    "id": 82,
+    "client_id": 11,
+    "date": "2026-07-02",
+    "service": "Design de marca",
+    "amount": 8600,
+    "status": "Paga"
+  },
+  {
+    "id": 83,
+    "client_id": 2,
+    "date": "2026-07-03",
+    "service": "Consultoria",
+    "amount": 7600,
+    "status": "Paga"
+  },
+  {
+    "id": 84,
+    "client_id": 8,
+    "date": "2026-07-06",
+    "service": "Design de marca",
+    "amount": 8100,
+    "status": "Paga"
+  },
+  {
+    "id": 85,
+    "client_id": 10,
+    "date": "2026-07-07",
+    "service": "Design de marca",
+    "amount": 9000,
+    "status": "Paga"
+  },
+  {
+    "id": 86,
+    "client_id": 9,
+    "date": "2026-07-09",
+    "service": "Consultoria",
+    "amount": 3100,
+    "status": "Paga"
+  },
+  {
+    "id": 87,
+    "client_id": 10,
+    "date": "2026-07-10",
+    "service": "Consultoria",
+    "amount": 10400,
+    "status": "Paga"
+  },
+  {
+    "id": 88,
+    "client_id": 11,
+    "date": "2026-07-13",
+    "service": "Formação",
+    "amount": 4150,
+    "status": "Paga"
+  },
+  {
+    "id": 89,
+    "client_id": 2,
+    "date": "2026-07-15",
+    "service": "Design de marca",
+    "amount": 5250,
+    "status": "Paga"
+  },
+  {
+    "id": 90,
+    "client_id": 4,
+    "date": "2026-07-17",
+    "service": "Desenvolvimento web",
+    "amount": 3050,
+    "status": "Paga"
+  },
+  {
+    "id": 91,
+    "client_id": 1,
+    "date": "2026-07-20",
+    "service": "Formação",
+    "amount": 2100,
+    "status": "Paga"
+  },
+  {
+    "id": 92,
+    "client_id": 8,
+    "date": "2026-07-27",
+    "service": "Manutenção mensal",
+    "amount": 1600,
+    "status": "Paga"
+  },
+  {
+    "id": 93,
+    "client_id": 2,
+    "date": "2026-07-29",
+    "service": "Consultoria",
+    "amount": 11150,
+    "status": "Paga"
+  },
+  {
+    "id": 94,
+    "client_id": 2,
+    "date": "2026-07-31",
+    "service": "Formação",
+    "amount": 4850,
+    "status": "Paga"
+  },
+  {
+    "id": 95,
+    "client_id": 10,
+    "date": "2026-08-03",
+    "service": "Manutenção mensal",
+    "amount": 2150,
+    "status": "Paga"
+  },
+  {
+    "id": 96,
+    "client_id": 2,
+    "date": "2026-08-11",
+    "service": "Aplicação mobile",
+    "amount": 43250,
+    "status": "Paga"
+  },
+  {
+    "id": 97,
+    "client_id": 11,
+    "date": "2026-08-12",
+    "service": "Consultoria",
+    "amount": 4000,
+    "status": "Paga"
+  },
+  {
+    "id": 98,
+    "client_id": 2,
+    "date": "2026-08-13",
+    "service": "Desenvolvimento web",
+    "amount": 27400,
+    "status": "Paga"
+  },
+  {
+    "id": 99,
+    "client_id": 6,
+    "date": "2026-08-14",
+    "service": "Manutenção mensal",
+    "amount": 1500,
+    "status": "Paga"
+  },
+  {
+    "id": 100,
+    "client_id": 2,
+    "date": "2026-08-19",
+    "service": "Manutenção mensal",
+    "amount": 1600,
+    "status": "Paga"
+  },
+  {
+    "id": 101,
+    "client_id": 11,
+    "date": "2026-08-21",
+    "service": "Desenvolvimento web",
+    "amount": 13100,
+    "status": "Em atraso"
+  },
+  {
+    "id": 102,
+    "client_id": 2,
+    "date": "2026-08-24",
+    "service": "Design de marca",
+    "amount": 6450,
+    "status": "Paga"
+  },
+  {
+    "id": 103,
+    "client_id": 8,
+    "date": "2026-08-25",
+    "service": "Manutenção mensal",
+    "amount": 2550,
+    "status": "Paga"
+  },
+  {
+    "id": 104,
+    "client_id": 2,
+    "date": "2026-08-31",
+    "service": "Design de marca",
+    "amount": 2950,
+    "status": "Em atraso"
+  },
+  {
+    "id": 105,
+    "client_id": 2,
+    "date": "2026-09-02",
+    "service": "Aplicação mobile",
+    "amount": 53500,
+    "status": "Em atraso"
+  },
+  {
+    "id": 106,
+    "client_id": 11,
+    "date": "2026-09-04",
+    "service": "Desenvolvimento web",
+    "amount": 11300,
+    "status": "Pendente"
+  },
+  {
+    "id": 107,
+    "client_id": 1,
+    "date": "2026-09-08",
+    "service": "Formação",
+    "amount": 900,
+    "status": "Paga"
+  },
+  {
+    "id": 108,
+    "client_id": 5,
+    "date": "2026-09-09",
+    "service": "Aplicação mobile",
+    "amount": 16150,
+    "status": "Pendente"
+  },
+  {
+    "id": 109,
+    "client_id": 3,
+    "date": "2026-09-15",
+    "service": "Consultoria",
+    "amount": 2850,
+    "status": "Pendente"
+  },
+  {
+    "id": 110,
+    "client_id": 3,
+    "date": "2026-09-17",
+    "service": "Design de marca",
+    "amount": 1800,
+    "status": "Pendente"
+  },
+  {
+    "id": 111,
+    "client_id": 2,
+    "date": "2026-09-21",
+    "service": "Manutenção mensal",
+    "amount": 1950,
+    "status": "Pendente"
+  },
+  {
+    "id": 112,
+    "client_id": 5,
+    "date": "2026-09-22",
+    "service": "Consultoria",
+    "amount": 4700,
+    "status": "Pendente"
+  },
+  {
+    "id": 113,
+    "client_id": 10,
+    "date": "2026-09-23",
+    "service": "Aplicação mobile",
+    "amount": 15750,
+    "status": "Paga"
+  },
+  {
+    "id": 114,
+    "client_id": 1,
+    "date": "2026-09-29",
+    "service": "Manutenção mensal",
+    "amount": 1100,
+    "status": "Paga"
+  },
+  {
+    "id": 115,
+    "client_id": 11,
+    "date": "2026-10-07",
+    "service": "Manutenção mensal",
+    "amount": 1550,
+    "status": "Em atraso"
+  },
+  {
+    "id": 116,
+    "client_id": 6,
+    "date": "2026-10-09",
+    "service": "Aplicação mobile",
+    "amount": 26550,
+    "status": "Paga"
+  },
+  {
+    "id": 117,
+    "client_id": 11,
+    "date": "2026-10-12",
+    "service": "Consultoria",
+    "amount": 4550,
+    "status": "Paga"
+  },
+  {
+    "id": 118,
+    "client_id": 11,
+    "date": "2026-10-15",
+    "service": "Manutenção mensal",
+    "amount": 2150,
+    "status": "Pendente"
+  },
+  {
+    "id": 119,
+    "client_id": 5,
+    "date": "2026-10-16",
+    "service": "Manutenção mensal",
+    "amount": 750,
+    "status": "Paga"
+  },
+  {
+    "id": 120,
+    "client_id": 6,
+    "date": "2026-10-19",
+    "service": "Aplicação mobile",
+    "amount": 17500,
+    "status": "Pendente"
+  },
+  {
+    "id": 121,
+    "client_id": 2,
+    "date": "2026-10-20",
+    "service": "Aplicação mobile",
+    "amount": 35050,
+    "status": "Pendente"
+  },
+  {
+    "id": 122,
+    "client_id": 4,
+    "date": "2026-10-21",
+    "service": "Formação",
+    "amount": 1300,
+    "status": "Paga"
+  },
+  {
+    "id": 123,
+    "client_id": 8,
+    "date": "2026-10-26",
+    "service": "Aplicação mobile",
+    "amount": 29250,
+    "status": "Em atraso"
+  },
+  {
+    "id": 124,
+    "client_id": 14,
+    "date": "2026-10-28",
+    "service": "Formação",
+    "amount": 950,
+    "status": "Paga"
+  }
+]
