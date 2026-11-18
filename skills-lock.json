@@ -1,0 +1,68 @@
+{
+  "version": 2,
+  "skills": {
+    "data-analysis": {
+      "source": "JPeetz/agent-skills",
+      "commit": "26db0773f65ad616095ab36013211cbaf1068051",
+      "sourceType": "github",
+      "skillPath": "skills/data/data-analysis/SKILL.md",
+      "computedHash": "76fff33bb0cfb025f8bc206ee0cd750b9eb2df170d34c55663f5a570e2c1222e"
+    },
+    "design-system": {
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "f984fcd3dec8c71cf88f2b47ff8acd0ff4ca99c2",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/design-system/SKILL.md",
+      "computedHash": "9efdc106c73d8d298b5a90d55c56995840a37f754fb9d498d14e6562bdaadc23"
+    },
+    "exploratory-data-analysis": {
+      "source": "JPeetz/agent-skills",
+      "commit": "26db0773f65ad616095ab36013211cbaf1068051",
+      "sourceType": "github",
+      "skillPath": "skills/data/exploratory-data-analysis/SKILL.md",
+      "computedHash": "ee6764f0428082a704db7fa771ce1cedfe12c1e14afda4f155a6bad4cf76da63"
+    },
+    "impeccable": {
+      "source": "pbakaus/impeccable",
+      "commit": "d41d9860b0094dcb68030657da63461212835aaa",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/impeccable/SKILL.md",
+      "computedHash": "077889e9782761360c17acbc2522af320d0dd0f928b09cd90884fa304f443a34"
+    },
+    "nextjs-app-router-patterns": {
+      "source": "wshobson/agents",
+      "commit": "42203085cfc5736204bf0f6d436dff7e1da0bf3f",
+      "sourceType": "github",
+      "skillPath": "plugins/frontend-mobile-development/skills/nextjs-app-router-patterns/SKILL.md",
+      "computedHash": "39b84480d3a62355fd1199173dc70b97efe1daf6dbfae560cc7b85e127934a98"
+    },
+    "nextjs-zustand": {
+      "source": "Fusengine/claude-plugins",
+      "commit": "5b405795b3951350fe486f8f607af031d96bf36b",
+      "sourceType": "github",
+      "skillPath": "plugins/nextjs-expert/skills/nextjs-zustand/SKILL.md",
+      "computedHash": "9e97c2175779d9433693e167293dc400a6a5e4fe341fe6269f8ad53e78f0ca65"
+    },
+    "ponytail": {
+      "source": "DietrichGebert/ponytail",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "sourceType": "github",
+      "skillPath": "skills/ponytail/SKILL.md",
+      "computedHash": "56d72677aca02689ac89bd48734e8c19b40ab86716d1257eaf5f1238b43cda6b"
+    },
+    "recharts": {
+      "source": "andy-spike/skills",
+      "commit": "2737eadc3b88390775e71b4e0e4c5e1571607409",
+      "sourceType": "github",
+      "skillPath": "skills/recharts/SKILL.md",
+      "computedHash": "a2c9d5fd941c2fb7596dd1b2ad1e9eb000b2a2efdc57539990ad56ba580550a6"
+    },
+    "solar-icons": {
+      "source": "saoudi-h/solar-icons",
+      "commit": "c808ead136c23d952cde728189f3210b01796a50",
+      "sourceType": "github",
+      "skillPath": "skills/solar-icons/SKILL.md",
+      "computedHash": "994bfc176acc443a74a912f3bfa3214558b5f342d7e39a47942a1e241559f7b2"
+    }
+  }
+}
