@@ -9,6 +9,7 @@ export interface Client {
   email: string;
   phone: string;
   customer_since: string;
+  
 }
 
 export interface Order {
@@ -18,4 +19,5 @@ export interface Order {
   service: string;
   amount: number;
   status: OrderStatus;
+
 }
