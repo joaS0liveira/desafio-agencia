@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
+    "test:lib": "node --test src/scripts/test-*.ts",
     "format": "biome format --write"
   },
   "dependencies": {

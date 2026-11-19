@@ -1,4 +1,10 @@
-export type OrderStatus = "Paga" | "Pendente" | "Em atraso";
+export const ORDER_STATUS = {
+  paid: "Paga",
+  pending: "Pendente",
+  overdue: "Em atraso",
+} as const;
+
+export type OrderStatus = (typeof ORDER_STATUS)[keyof typeof ORDER_STATUS];
 
 export interface Client {
   id: number;
@@ -9,7 +15,6 @@ export interface Client {
   email: string;
   phone: string;
   customer_since: string;
-  
 }
 
 export interface Order {
@@ -19,5 +24,4 @@ export interface Order {
   service: string;
   amount: number;
   status: OrderStatus;
-
 }
