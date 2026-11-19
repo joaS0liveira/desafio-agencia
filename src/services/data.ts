@@ -6,7 +6,6 @@ async function fetchJson<T>(file: string): Promise<T> {
   if (!response.ok) {
     throw new Error(`Could not load ${file}.json`);
   }
-  
   return response.json();
 }
 
