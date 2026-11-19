@@ -10,7 +10,7 @@
     },
     "design-system": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "commit": "f984fcd3dec8c71cf88f2b47ff8acd0ff4ca99c2",
+      "commit": "2de1134dc4d1cfe112934611ae5803ae17a1bd7e",
       "sourceType": "github",
       "skillPath": ".claude/skills/design-system/SKILL.md",
       "computedHash": "9efdc106c73d8d298b5a90d55c56995840a37f754fb9d498d14e6562bdaadc23"
@@ -24,10 +24,17 @@
     },
     "impeccable": {
       "source": "pbakaus/impeccable",
-      "commit": "d41d9860b0094dcb68030657da63461212835aaa",
+      "commit": "b49177d32788f2dc585c42831d845dacf1ebed2c",
       "sourceType": "github",
       "skillPath": ".agents/skills/impeccable/SKILL.md",
-      "computedHash": "077889e9782761360c17acbc2522af320d0dd0f928b09cd90884fa304f443a34"
+      "computedHash": "08bd5bf141cb507f46bd8347890cd985865606f15adf88295ed3a73bc9ad5d96"
+    },
+    "improve": {
+      "source": "shadcn/improve",
+      "commit": "cac56e1ebd3c279aa9153616cfeac7b174ab90f9",
+      "sourceType": "github",
+      "skillPath": "skills/improve/SKILL.md",
+      "computedHash": "9e8fe9ea4f9a0e4155801d1624e38ca23798467bb88b447efaa5120f7b1fe802"
     },
     "nextjs-app-router-patterns": {
       "source": "wshobson/agents",
