@@ -20,6 +20,7 @@ interface AppStore {
   orders: Order[];
   loading: boolean;
   initialized: boolean;
+  error: string | null;
   loadData: () => Promise<void>;
 }
 
@@ -33,11 +34,12 @@ export const useStore = create<AppStore>((set, get) => ({
   orders: [],
   loading: true,
   initialized: false,
+  error: null,
 
   loadData: async () => {
     // Se já carregou ou está a carregar, não repete o fetch
     if (get().initialized) return;
-    set({ initialized: true, loading: true });
+    set({ initialized: true, loading: true, error: null });
 
     try {
       const [clients, orders] = await Promise.all([
@@ -47,7 +49,12 @@ export const useStore = create<AppStore>((set, get) => ({
       set({ clients, orders, loading: false });
     } catch (error) {
       console.error("Erro ao carregar dados:", error);
-      set({ loading: false, initialized: false });
+
+      set({
+        loading: false,
+        initialized: false,
+        error: error instanceof Error ? error.message : String(error),
+      });
     }
   },
 }));
