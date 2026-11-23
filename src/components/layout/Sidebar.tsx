@@ -187,7 +187,7 @@ export function Sidebar() {
           className="hidden px-2 lg:flex"
           aria-label="jrl.fin, Visão geral"
         >
-          <Logo signature />
+          <Logo />
         </Link>
 
         <nav
