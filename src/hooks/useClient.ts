@@ -29,7 +29,7 @@ export function useClient(id: number | string, recentLimit = 6) {
     const services = revenueByService(clientOrders);
     const missing = missingServices(
       clientOrders,
-      uniqueValues(orders, (order) => order.service)
+      uniqueValues(orders, (order) => order.service),
     );
 
     return {
@@ -49,4 +49,3 @@ export function useClient(id: number | string, recentLimit = 6) {
     };
   }, [id, recentLimit, clients, orders, loading]);
 }
-
