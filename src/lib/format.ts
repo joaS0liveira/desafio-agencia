@@ -1,4 +1,4 @@
-export const euro = new Intl.NumberFormat("pt-PT", {
+const euro = new Intl.NumberFormat("pt-PT", {
   style: "currency",
   currency: "EUR",
   maximumFractionDigits: 0,

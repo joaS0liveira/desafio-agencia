@@ -1,6 +1,6 @@
 import type { CollectionRow } from "@/types/reports";
 import { type Client, ORDER_STATUS } from "../types/index.ts";
-import { emailLink } from "./actions.ts";
+import { EMAIL_SIGNATURE, emailLink } from "./actions.ts";
 import { formatDate, formatEuro } from "./format.ts";
 
 // Funções puras para o ecrã de Cobranças: entram linhas de cobrança, sai informação.
@@ -12,9 +12,9 @@ import { formatDate, formatEuro } from "./format.ts";
 export function openTone(
   overdue: number,
   pending: number,
-): "perigo" | "aviso" | "normal" {
-  if (overdue > 0) return "perigo";
-  if (pending > 0) return "aviso";
+): "danger" | "warning" | "normal" {
+  if (overdue > 0) return "danger";
+  if (pending > 0) return "warning";
   return "normal";
 }
 
@@ -119,7 +119,7 @@ export function debtorEmailLink(debtor: Debtor): string {
     ...lines,
     "",
     "Obrigado,",
-    "Equipa jrl.labs",
+    EMAIL_SIGNATURE,
   ].join("\n");
   return emailLink(client.email, subject, body);
 }

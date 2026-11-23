@@ -1,28 +1,28 @@
 "use client";
 
 import { useId } from "react";
-import { AntiguidadeDivida } from "@/components/cobrancas/AntiguidadeDivida";
-import { CartoesCobranca } from "@/components/cobrancas/CartoesCobranca";
-import { DevedoresPorCliente } from "@/components/cobrancas/DevedoresPorCliente";
-import { TabelaCobrancas } from "@/components/cobrancas/TabelaCobrancas";
-import { CabecalhoPagina } from "@/components/ui/Bloco";
-import { ACarregar, EstadoVazio } from "@/components/ui/EstadoVazio";
-import { Icone } from "@/components/ui/Icone";
+import { CollectionStats } from "@/components/collections/CollectionStats";
+import { CollectionsTable } from "@/components/collections/CollectionsTable";
+import { DebtAging } from "@/components/collections/DebtAging";
+import { DebtorList } from "@/components/collections/DebtorList";
+import { EmptyState, PageSkeleton } from "@/components/ui/EmptyState";
+import { Icon } from "@/components/ui/Icon";
+import { PageHeader } from "@/components/ui/Panel";
 import { useAppData } from "@/hooks/useAppData";
 import { type CollectionsSort, useCollections } from "@/hooks/useCollections";
 import { formatEuro } from "@/lib/format";
 import { ORDER_STATUS, type OrderStatus } from "@/types";
 
-const ordenacoes: { valor: CollectionsSort; rotulo: string }[] = [
-  { valor: "priority", rotulo: "Prioridade (atrasos primeiro)" },
-  { valor: "amount", rotulo: "Maior valor" },
-  { valor: "days", rotulo: "Mais antigas" },
-  { valor: "date", rotulo: "Mais recentes" },
-  { valor: "client", rotulo: "Cliente (A-Z)" },
+const sortOptions: { value: CollectionsSort; label: string }[] = [
+  { value: "priority", label: "Prioridade (atrasos primeiro)" },
+  { value: "amount", label: "Maior valor" },
+  { value: "days", label: "Mais antigas" },
+  { value: "date", label: "Mais recentes" },
+  { value: "client", label: "Cliente (A-Z)" },
 ];
 
 /** Descarrega o CSV. O "﻿" no início faz o Excel ler bem os acentos. */
-function descarregarCsv(csv: string) {
+function downloadCsv(csv: string) {
   const blob = new Blob([`﻿${csv}`], { type: "text/csv;charset=utf-8" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
@@ -32,37 +32,37 @@ function descarregarCsv(csv: string) {
   URL.revokeObjectURL(url);
 }
 
-export default function CobrancasPage() {
+export default function CollectionsPage() {
   const { clients } = useAppData();
   const c = useCollections();
   const id = useId();
 
-  if (c.loading) return <ACarregar />;
+  if (c.loading) return <PageSkeleton />;
 
-  const rotulo = "text-xs font-medium text-muted";
+  const label = "text-xs font-medium text-muted";
 
   return (
     <>
-      <CabecalhoPagina
-        titulo="Cobranças"
-        descricao="Pendente = ainda dentro do prazo · Em atraso = prazo ultrapassado. Os dias contam desde a emissão da fatura até à última encomenda registada."
-        acoes={
+      <PageHeader
+        title="Cobranças"
+        description="Pendente = ainda dentro do prazo · Em atraso = prazo ultrapassado. Os dias contam desde a emissão da fatura até à última encomenda registada."
+        actions={
           <button
             type="button"
             className="btn btn-secondary disabled:opacity-50"
-            onClick={() => descarregarCsv(c.csv)}
+            onClick={() => downloadCsv(c.csv)}
             disabled={c.rows.length === 0}
           >
-            <Icone nome="descarregar" tamanho={17} />
+            <Icon name="download" size={17} />
             Exportar CSV
           </button>
         }
       />
 
-      <CartoesCobranca
-        resumo={c.summary}
-        pesoNoFaturado={c.openShare}
-        totalClientes={clients.length}
+      <CollectionStats
+        summary={c.summary}
+        billedShare={c.openShare}
+        totalClients={clients.length}
       />
 
       {/* Os filtros aplicam-se a tudo o que está por baixo */}
@@ -71,7 +71,7 @@ export default function CobrancasPage() {
         className="card mt-4 mb-3 flex flex-wrap items-end gap-3 p-4 sm:mt-6"
       >
         <div className="flex min-w-0 flex-1 basis-[calc(50%-6px)] flex-col gap-1.5 sm:flex-none sm:basis-auto">
-          <label htmlFor={`${id}-estado`} className={rotulo}>
+          <label htmlFor={`${id}-estado`} className={label}>
             Estado
           </label>
           <select
@@ -88,7 +88,7 @@ export default function CobrancasPage() {
           </select>
         </div>
         <div className="flex min-w-0 flex-1 basis-[calc(50%-6px)] flex-col gap-1.5 sm:flex-none sm:basis-auto">
-          <label htmlFor={`${id}-servico`} className={rotulo}>
+          <label htmlFor={`${id}-servico`} className={label}>
             Serviço
           </label>
           <select
@@ -126,11 +126,11 @@ export default function CobrancasPage() {
 
       {c.rows.length === 0 ? (
         <div className="card">
-          <EstadoVazio
-            icone="recebido"
-            titulo="Nada por cobrar com estes filtros"
-            texto="Experimenta outro estado ou serviço."
-            acao={
+          <EmptyState
+            icon="checkCircle"
+            title="Nada por cobrar com estes filtros"
+            text="Experimenta outro estado ou serviço."
+            action={
               <button
                 type="button"
                 className="btn btn-secondary"
@@ -144,8 +144,8 @@ export default function CobrancasPage() {
       ) : (
         <>
           <div className="grid gap-3 lg:grid-cols-[minmax(0,1.6fr)_minmax(300px,1fr)]">
-            <DevedoresPorCliente devedores={c.debtors} />
-            <AntiguidadeDivida faixas={c.buckets} />
+            <DebtorList debtors={c.debtors} />
+            <DebtAging buckets={c.buckets} />
           </div>
 
           {/* O detalhe fatura a fatura fica recolhido: o trabalho faz-se na lista "A contactar" */}
@@ -159,9 +159,9 @@ export default function CobrancasPage() {
                   Fatura a fatura, com o email de cobrança de cada uma
                 </span>
               </span>
-              <Icone
-                nome="seta"
-                tamanho={18}
+              <Icon
+                name="arrowRight"
+                size={18}
                 className="shrink-0 rotate-90 text-muted transition-transform group-open:-rotate-90"
               />
             </summary>
@@ -178,14 +178,14 @@ export default function CobrancasPage() {
                 value={c.sort}
                 onChange={(e) => c.setSort(e.target.value as CollectionsSort)}
               >
-                {ordenacoes.map((o) => (
-                  <option key={o.valor} value={o.valor}>
-                    {o.rotulo}
+                {sortOptions.map((o) => (
+                  <option key={o.value} value={o.value}>
+                    {o.label}
                   </option>
                 ))}
               </select>
             </div>
-            <TabelaCobrancas linhas={c.rows} />
+            <CollectionsTable lines={c.rows} />
           </details>
         </>
       )}
