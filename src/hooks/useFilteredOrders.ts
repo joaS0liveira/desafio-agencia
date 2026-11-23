@@ -1,10 +1,10 @@
 "use client";
 
 import { useMemo } from "react";
-import { useAppData } from "./useAppData.ts";
 import { filterOrders } from "../lib/filters.ts";
 import { totals } from "../lib/stats.ts";
 import { useStore } from "../store/useStore.ts";
+import { useAppData } from "./useAppData.ts";
 
 export function useFilteredOrders() {
   const filters = useStore((state) => state.filters);

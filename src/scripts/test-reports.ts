@@ -1,4 +1,8 @@
 import assert from "node:assert/strict";
+import clientsData from "../../public/data/clientes.json" with { type: "json" };
+import ordersData from "../../public/data/encomendas.json" with {
+  type: "json",
+};
 import {
   clientSummary,
   inactiveClients,
@@ -24,9 +28,7 @@ import {
   sumOrderAmounts,
   totals,
 } from "../lib/stats.ts";
-import clientsData  from "../../public/data/clientes.json";
-import ordersData from "../../public/data/encomendas.json";
-import { Client, Order, ORDER_STATUS } from "../types/index.ts";
+import { type Client, ORDER_STATUS, type Order } from "../types/index.ts";
 
 const clients = clientsData as Client[];
 const orders = ordersData as Order[];

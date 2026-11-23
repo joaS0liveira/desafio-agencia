@@ -1,6 +1,9 @@
 import { type Client, ORDER_STATUS, type Order } from "../types/index.ts";
 import { formatDate, formatEuro } from "./format.ts";
 
+/** Assinatura de todos os emails de cobrança. */
+export const EMAIL_SIGNATURE = "Equipa jrl.labs";
+
 export function emailLink(
   email: string,
   subject?: string,
@@ -25,7 +28,7 @@ export function collectionEmailLink(client: Client, order: Order): string {
     `Lembramos que a fatura de ${order.service}, emitida a ${formatDate(order.date)}, no valor de ${amount}, ainda não foi paga.`,
     "",
     "Obrigado,",
-    "Agência",
+    EMAIL_SIGNATURE,
   ].join("\n");
   return emailLink(client.email, subject, body);
 }
@@ -38,7 +41,11 @@ export function phoneLink(phone: string): string {
 type CsvCell = string | number | null | undefined;
 
 function escapeCell(value: CsvCell, separator: string): string {
-  const text = String(value ?? "");
+  // Texto que começa por = + - @ (ou tab/CR) seria uma fórmula no Excel: o apóstrofo neutraliza-a
+  const text =
+    typeof value === "string" && /^[=+\-@\t\r]/.test(value)
+      ? `'${value}`
+      : String(value ?? "");
   return /["\r\n]/.test(text) || text.includes(separator)
     ? `"${text.replaceAll('"', '""')}"`
     : text;

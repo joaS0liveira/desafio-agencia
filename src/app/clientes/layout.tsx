@@ -4,6 +4,6 @@ import type { Metadata } from "next";
 // O detalhe (/clientes/[id]) troca-o pelo nome da empresa.
 export const metadata: Metadata = { title: "Clientes" };
 
-export default function ClientesLayout({ children }: LayoutProps<"/clientes">) {
+export default function ClientsLayout({ children }: LayoutProps<"/clientes">) {
   return children;
 }

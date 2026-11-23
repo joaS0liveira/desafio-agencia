@@ -58,4 +58,3 @@ export const useStore = create<AppStore>((set, get) => ({
     }
   },
 }));
-

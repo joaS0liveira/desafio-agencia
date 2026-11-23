@@ -14,7 +14,7 @@ export type ClientSort = "billed" | "open" | "inactive" | "name";
 export type ClientView = "all" | "open" | "inactive";
 
 /** Quantos clientes aparecem em cada página. */
-export const CLIENTS_PER_PAGE = 9;
+const CLIENTS_PER_PAGE = 9;
 
 const INACTIVE_DAYS = 90;
 
